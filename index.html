@@ -5,6 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Malayali Polymath of Lahore: Shankaranatha Jyothsyer</title>
 <meta name="description" content="A long-form history of the Malayali astrologer, judge and statesman who served at the court of Maharaja Ranjit Singh.">
+<link rel="icon" href="/images/sj.ico" sizes="32x32">
+<link rel="canonical" href="https://sj-cmq.pages.dev/">
+<meta name="theme-color" content="#1c1917">
+<meta name="author" content="Nikhil Narayanan">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Malayali Polymath of Lahore">
+<meta property="og:title" content="The Malayali Polymath of Lahore: Shankaranatha Jyothsyer">
+<meta property="og:description" content="The extraordinary life of Shankaranatha Jyothsyer, from a decaying Naalukettu in Malabar to the royal durbars of Lahore and Travancore.">
+<meta property="og:url" content="https://sj-cmq.pages.dev/">
+<meta property="og:image" content="https://sj-cmq.pages.dev/images/sj_social.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="720">
+<meta property="og:image:alt" content="The Malayali Polymath of Lahore: Shankaranatha Jyothsyer">
+<meta property="article:author" content="Nikhil Narayanan">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Malayali Polymath of Lahore: Shankaranatha Jyothsyer">
+<meta name="twitter:description" content="From a decaying Naalukettu in Malabar to the royal durbars of Lahore and Travancore.">
+<meta name="twitter:image" content="https://sj-cmq.pages.dev/images/sj_social.png">
+<meta name="twitter:image:alt" content="The Malayali Polymath of Lahore: Shankaranatha Jyothsyer">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -391,7 +411,7 @@ tailwind.config = { theme: { extend: {
 <li><span class="an">Shri. Amjad Chudhary</span><span class="ad">Kasur, Pakistan</span></li>
 <li><span class="an">Shri. Sukumaran Chembollil</span><span class="ad">Pune</span></li>
 <li><span class="an">Smt. Sreevidya TP</span><span class="ad">Bengaluru</span></li>
-<li><span class="an">Harmilan Singh</span><span class="ad">@tawarikh_e_punjab</span></li>
+<li><span class="an">Shri. Harmilan Singh</span><span class="ad">@tawarikh_e_punjab</span></li>
 <li><span class="an">Prof. Indu Banga</span><span class="ad">Department of History, Panjab University, Chandigarh</span></li>
 <li><span class="an">Prof. Vikas Rathee</span><span class="ad">Central University of Punjab</span></li>
 <li><span class="an">Kaudiar Palace</span><span class="ad">Thiruvananthapuram</span></li>
@@ -399,6 +419,7 @@ tailwind.config = { theme: { extend: {
 <li><span class="an">Calicut University Library</span></li>
 <li><span class="an">CUSAT Library</span></li>
 <li><span class="an">Dr. M. G. Sashibhooshan</span><span class="ad">Historian, Thiruvananthapuram</span></li>
+<li><span class="an">S. Rajendu</span><span class="ad">Curator, Sevadhi Museum &amp; Indological Research Institute, Kottayam</span></li>
 </ul>
 </section>
 </main>
@@ -406,6 +427,7 @@ tailwind.config = { theme: { extend: {
 <footer class="bg-ink text-stone-300 font-meta text-sm py-10 px-5 text-center">
   <p class="font-display text-lg mb-2">The Malayali Polymath of Lahore</p>
   <p>Archival images are credited in their captions. <button id="copyLink" class="underline ml-2">Copy link to this page</button></p>
+  <p class="mt-5 text-stone-400">&copy; <span id="yr">2026</span> Nikhil Narayanan. All rights reserved.</p>
 </footer>
 
 <button id="toTop" aria-label="Back to top" style="opacity:0;pointer-events:none">&uarr;</button>
@@ -435,20 +457,36 @@ tailwind.config = { theme: { extend: {
   <div class="bg-parch max-w-lg w-full p-8 border border-amber relative">
     <button id="tipClose" class="absolute top-3 right-4 font-meta text-sm" aria-label="Close form">Close</button>
     <h3 id="tipTitle" class="font-display font-bold text-2xl mb-2">Do you know where the sword is?</h3>
-    <p class="font-meta text-sm text-stone-600 mb-5">Describe what you know. Your message opens in your email app, addressed to the author.</p>
+    <p id="tipLead" class="font-meta text-sm text-stone-600 mb-5">Even a small clue helps: a family story, a name, a place, a photograph. I read every message.</p>
     <form id="tipForm" class="font-meta text-sm space-y-4">
-      <label class="block">Your name<input name="name" required class="mt-1 w-full border border-ink/40 bg-white px-3 py-2"></label>
-      <label class="block">Your email<input name="email" type="email" required class="mt-1 w-full border border-ink/40 bg-white px-3 py-2"></label>
+      <label class="block">Your name<input name="name" required autocomplete="name" class="mt-1 w-full border border-ink/40 bg-white px-3 py-2"></label>
+      <label class="block">Your email, so I can reply<input name="email" type="email" required autocomplete="email" class="mt-1 w-full border border-ink/40 bg-white px-3 py-2"></label>
+      <label class="block">What is this about?
+        <select name="kind" class="mt-1 w-full border border-ink/40 bg-white px-3 py-2">
+          <option>I know where the sword is</option><option>I have family stories or records</option><option>I have photographs or documents</option><option>A correction or something else</option>
+        </select></label>
       <label class="block">What do you know?<textarea name="msg" rows="5" required class="mt-1 w-full border border-ink/40 bg-white px-3 py-2"></textarea></label>
-      <button class="bg-amber text-white px-6 py-3 hover:bg-amber-700">Send tip</button>
-      <p id="tipOk" class="text-amber font-semibold" hidden>Your email app should now be open with the tip ready to send.</p>
+      <input name="botcheck" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
+      <button id="tipSend" class="bg-amber text-white px-6 py-3 hover:bg-amber-700">Send tip</button>
+      <p id="tipErr" class="text-red-700" hidden></p>
     </form>
+    <div id="tipDone" hidden class="font-meta text-sm">
+      <p id="tipDoneMsg" class="text-amber font-semibold mb-3"></p>
+      <textarea id="tipText" readonly rows="6" class="w-full border border-ink/30 bg-white px-3 py-2 text-xs"></textarea>
+      <div class="flex flex-wrap gap-2 mt-3">
+        <a id="tipGmail" target="_blank" rel="noopener" class="bg-amber text-white px-4 py-2 hover:bg-amber-700">Open in Gmail</a>
+        <a id="tipMail" class="border border-ink px-4 py-2 hover:bg-ink hover:text-parch">Open in email app</a>
+        <button id="tipCopy" class="border border-ink px-4 py-2 hover:bg-ink hover:text-parch">Copy message</button>
+      </div>
+      <p class="text-xs text-stone-600 mt-3">Nothing is sent until you press send in your email. Or write directly to <span id="tipAddr"></span>.</p>
+    </div>
   </div>
 </div>
 
 <script>
 /* ===== Edit these ===== */
-const CONTACT_EMAIL = "historian@example.com";   // where sword tips are sent
+const CONTACT_EMAIL = "nikhilnarayanan@gmail.com";   // where sword tips are sent
+const WEB3FORMS_KEY = "";   // optional: free access key from web3forms.com; when set, tips are sent straight to your inbox from the page
 const RAW = "https://raw.githubusercontent.com/codepuli/sj/main/";
 const USE_RESIZER = true;   // resizes photos on the fly through the free wsrv.nl image service; set false to load originals
 const GALLERY = [
@@ -542,15 +580,34 @@ lb.addEventListener("click", e => { if (e.target.id==="lbStage") closeLb(); });
 
 // Tip modal
 const tm = $("#tipModal");
-$("#tipOpen").onclick = () => { tm.hidden = false; tm.querySelector("input").focus(); };
+$("#tipOpen").onclick = () => { $("#tipForm").hidden = false; $("#tipDone").hidden = true; $("#tipLead").hidden = false; tm.hidden = false; tm.querySelector("input").focus(); };
 const closeTip = () => { tm.hidden = true; $("#tipOpen").focus(); };
 $("#tipClose").onclick = closeTip; tm.addEventListener("click", e => e.target===tm && closeTip());
-$("#tipForm").onsubmit = e => {
-  e.preventDefault(); const f = new FormData(e.target);
-  const body = `${f.get("msg")}\n\nFrom: ${f.get("name")} <${f.get("email")}>`;
-  location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("Tip: Shankaranatha Jyothsyer's sword")}&body=${encodeURIComponent(body)}`;
-  $("#tipOk").hidden = false;
+$("#tipAddr").textContent = CONTACT_EMAIL;
+$("#tipForm").onsubmit = async e => {
+  e.preventDefault(); const f = new FormData(e.target), err = $("#tipErr"); err.hidden = true;
+  if (f.get("botcheck")) return;
+  const subject = "Tip: Shankaranatha Jyothsyer's sword (" + f.get("kind") + ")";
+  const body = f.get("msg") + "\n\nFrom: " + f.get("name") + " <" + f.get("email") + ">\nTopic: " + f.get("kind");
+  const done = msg => { $("#tipForm").hidden = true; $("#tipDone").hidden = false; $("#tipDoneMsg").textContent = msg; };
+  if (WEB3FORMS_KEY) {
+    const btn = $("#tipSend"); btn.disabled = true; btn.textContent = "Sending…";
+    try {
+      const r = await fetch("https://api.web3forms.com/submit", {method:"POST", headers:{"Content-Type":"application/json", Accept:"application/json"},
+        body: JSON.stringify({access_key:WEB3FORMS_KEY, subject, name:f.get("name"), email:f.get("email"), message:body, botcheck:""})});
+      const j = await r.json();
+      if (j.success) { $("#tipForm").hidden = true; $("#tipLead").hidden = true; $("#tipDone").hidden = false; $("#tipDoneMsg").textContent = "Thank you. Your message has been sent."; $("#tipText").hidden = true; $$("#tipDone .flex, #tipDone .text-xs").forEach(x => x.hidden = true); return; }
+      throw new Error(j.message || "failed");
+    } catch (_) { btn.disabled = false; btn.textContent = "Send tip"; err.textContent = "That did not go through. Please try again, or write to " + CONTACT_EMAIL + "."; err.hidden = false; return; }
+  }
+  const q = "subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+  $("#tipText").value = "To: " + CONTACT_EMAIL + "\nSubject: " + subject + "\n\n" + body;
+  $("#tipMail").href = "mailto:" + CONTACT_EMAIL + "?" + q;
+  $("#tipGmail").href = "https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent(CONTACT_EMAIL) + "&" + q;
+  $("#tipLead").hidden = true; done("Your message is ready. Choose how to send it:");
 };
+$("#tipCopy").onclick = e => { $("#tipText").select(); (navigator.clipboard ? navigator.clipboard.writeText($("#tipText").value) : Promise.reject()).then(() => e.target.textContent = "Copied", () => document.execCommand("copy")); };
+$("#yr").textContent = new Date().getFullYear();
 
 
 // Scroll reveal
