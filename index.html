@@ -6,15 +6,15 @@
 <title>The Malayali Polymath of Lahore: Shankaranatha Jyothsyer</title>
 <meta name="description" content="A long-form history of the Malayali astrologer, judge and statesman who served at the court of Maharaja Ranjit Singh.">
 <link rel="icon" href="/images/sj.ico" sizes="32x32">
-<link rel="canonical" href="https://sj-cmq.pages.dev/">
+<link rel="canonical" href="https://sjastro.pages.dev/">
 <meta name="theme-color" content="#1c1917">
 <meta name="author" content="Nikhil Narayanan">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="The Malayali Polymath of Lahore">
 <meta property="og:title" content="The Malayali Polymath of Lahore: Shankaranatha Jyothsyer">
 <meta property="og:description" content="The extraordinary life of Shankaranatha Jyothsyer, from a decaying Naalukettu in Malabar to the royal durbars of Lahore and Travancore.">
-<meta property="og:url" content="https://sj-cmq.pages.dev/">
-<meta property="og:image" content="https://sj-cmq.pages.dev/images/sj_social.png">
+<meta property="og:url" content="https://sjastro.pages.dev/">
+<meta property="og:image" content="https://sjastro.pages.dev/images/sj_social.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1280">
 <meta property="og:image:height" content="720">
@@ -23,7 +23,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="The Malayali Polymath of Lahore: Shankaranatha Jyothsyer">
 <meta name="twitter:description" content="From a decaying Naalukettu in Malabar to the royal durbars of Lahore and Travancore.">
-<meta name="twitter:image" content="https://sj-cmq.pages.dev/images/sj_social.png">
+<meta name="twitter:image" content="https://sjastro.pages.dev/images/sj_social.png">
 <meta name="twitter:image:alt" content="The Malayali Polymath of Lahore: Shankaranatha Jyothsyer">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -139,6 +139,8 @@ tailwind.config = { theme: { extend: {
   @keyframes pulse { from { transform:scale(1); opacity:.8 } to { transform:scale(2.8); opacity:0 } }
   @media print { #topnav, #toast, #journey-map svg { display:none !important } }
   @media (prefers-reduced-motion:reduce){ .glow{animation:none} .route{stroke-dashoffset:0;stroke-dasharray:none} .mk.on .r{animation:none} }
+  #top h1, #top p, #top .eyebrow { text-shadow:0 1px 3px rgb(0 0 0 / .7), 0 2px 18px rgb(0 0 0 / .65); }
+  .eyebrow { display:inline-block; background:rgb(12 10 9 / .72); border-left:3px solid #f59e0b; padding:.55rem .9rem; border-radius:0 .4rem .4rem 0; font-weight:500; line-height:1.4; backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); }
 </style>
 </head>
 <body class="bg-[#fcfaf7] text-stone-850">
@@ -169,10 +171,11 @@ tailwind.config = { theme: { extend: {
 <section id="top" class="relative min-h-[85vh] flex items-end text-amber-50 overflow-hidden bg-stone-950">
   <img id="heroImg" data-lb data-cap="Vangat Madom, the two-century-old Naalukettu near Karivellur, Kannur district." data-w="1800" data-sizes="100vw" data-file="vangat_madom_long_shot.jpg.JPG" data-alt-file="vangat_madom_entrance.jpg.JPG" alt="Vangat Madom, a two-century-old Naalukettu near Karivellur" class="hero-img absolute inset-0 w-full h-full object-cover">
   <div id="heroLoad" class="absolute inset-0 flex items-center justify-center"><span class="spinner"></span></div>
+  <div class="absolute inset-0 bg-stone-950/30"></div>
   <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/70 to-transparent"></div>
   <div class="relative max-w-4xl mx-auto px-5 pb-16 pt-44 w-full">
     <span class="inline-block font-meta text-[.7rem] tracking-[.18em] border border-amber-400/60 text-amber-300 px-3 py-1 rounded-full">12 MIN READ &bull; CULTURAL HISTORY</span>
-    <p class="font-meta text-sm mt-6 mb-4 text-amber-200/90">A slice of history spanning Karivellur, Lahore and Trivandrum</p>
+    <p class="eyebrow font-meta text-sm sm:text-base mt-6 mb-5 text-amber-100">A slice of history spanning Karivellur, Lahore and Trivandrum</p>
     <h1 class="font-serif font-black text-4xl md:text-6xl text-amber-50 leading-tight">The Malayali Polymath of Lahore</h1>
     <p class="font-serif italic text-xl md:text-2xl mt-6 max-w-2xl text-stone-200 leading-snug">The extraordinary life of Shankaranatha Jyothsyer &mdash; from a decaying Naalukettu in Malabar to the royal durbars of Lahore and Travancore.</p>
     <p class="font-meta text-sm mt-8 text-stone-300">By <span class="text-amber-100 font-semibold">Nikhil Narayanan</span></p>
