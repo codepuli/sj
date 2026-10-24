@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Malayali Polymath of Lahore: Shankaranatha Jyothsyer</title>
+<meta name="description" content="A long-form history of the Malayali astrologer, judge and statesman who served at the court of Maharaja Ranjit Singh.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { parch:'#fdfbf7', ink:'#1c1917', amber:{ DEFAULT:'#b45309' } },
+  fontFamily: { display:['"Playfair Display"','Georgia','serif'], body:['"Source Serif 4"','Georgia','serif'], meta:['Inter','system-ui','sans-serif'] }
+}}};
+</script>
+<style>
+  html { scroll-behavior:smooth; scroll-padding-top:90px; }
+  body { background:#fdfbf7; color:#1c1917; font-family:'Source Serif 4',Georgia,serif; }
+  .prose-col p { font-size:1.2rem; line-height:1.8; margin:0 0 1.5rem; }
+  .prose-col a { color:#b45309; text-decoration:underline; text-underline-offset:3px; }
+  .prose-col sup a { text-decoration:none; font-family:Inter,sans-serif; font-size:.7rem; font-weight:600; }
+  .opener::first-letter { font-family:'Playfair Display',Georgia,serif; font-weight:900; color:#b45309; float:left; font-size:5.2rem; line-height:.8; padding:.35rem .6rem 0 0; }
+  h2.sec { font-family:'Playfair Display',Georgia,serif; font-weight:700; font-size:clamp(1.7rem,4vw,2.4rem); line-height:1.15; margin:4.5rem 0 1.6rem; padding-top:1.2rem; border-top:3px double #1c1917; }
+  .pull { font-family:'Playfair Display',Georgia,serif; font-style:italic; font-size:clamp(1.5rem,3.4vw,2.1rem); line-height:1.35; border-left:4px solid #b45309; padding:.2rem 0 .2rem 1.4rem; margin:3rem 0; }
+  figure { margin:2.6rem 0; }
+  figure img { width:100%; display:block; cursor:zoom-in; background:#e7e0d2; min-height:120px; border:1px solid #1c191722; }
+  figcaption { font-family:Inter,sans-serif; font-size:.82rem; line-height:1.55; color:#57534e; margin-top:.7rem; padding-left:.8rem; border-left:2px solid #b45309; }
+  figcaption b { color:#1c1917; font-weight:600; }
+  .gal-btn img { aspect-ratio:4/3; object-fit:cover; width:100%; cursor:zoom-in; background:#e7e0d2; border:1px solid #1c191722; transition:filter .2s; }
+  .gal-btn:hover img { filter:sepia(.25) brightness(1.04); }
+  #lb { background:rgba(20,16,12,.96); }
+  #lb[hidden], #tipModal[hidden] { display:none; }
+  .stop { cursor:pointer; }
+  .stop .dot { width:14px; height:14px; border-radius:50%; border:2px solid #b45309; background:#fdfbf7; transition:all .25s; }
+  .stop.on .dot { background:#b45309; transform:scale(1.35); }
+  .stop.on .lbl { color:#b45309; font-weight:600; }
+  .stop.past .dot { background:#b4530966; }
+  .sword { background:#1c1917; color:#f5efe3; border:1px solid #b45309; outline:1px solid #b45309; outline-offset:-10px; }
+  :focus-visible { outline:3px solid #b45309; outline-offset:2px; }
+  @media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} *{transition:none!important} }
+  @media (max-width:640px){ .stop .lbl{display:none} .stop.on .lbl{display:block;position:absolute;top:26px;left:50%;transform:translateX(-50%);white-space:nowrap} }
+
+  body { counter-reset:sec 1; }
+  h2.sec::before { counter-increment:sec; content:"Part " counter(sec, upper-roman); display:block; font-family:Inter,sans-serif; font-size:.7rem; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:#b45309; margin-bottom:.5rem; }
+  .stop .yr { font-size:.6rem; color:#78716c; min-height:.8rem; }
+  .stop .lbl { text-align:center; line-height:1.15; max-width:5.5rem; }
+  .fact { margin:3rem 0; padding:1.5rem 1.6rem; background:#f6f0e4; border:1px solid #1c191733; border-top:4px solid #b45309; font-family:Inter,sans-serif; font-size:.9rem; line-height:1.55; }
+  .fact h3 { font-family:'Playfair Display',Georgia,serif; font-size:1.35rem; font-weight:700; margin:0 0 .9rem; }
+  .fact dl > div { display:grid; grid-template-columns:7rem 1fr; gap:.75rem; padding:.5rem 0; border-top:1px solid #1c191722; }
+  .fact dt { font-weight:600; color:#b45309; } .fact dd { margin:0; }
+  .fact p { margin:.5rem 0; font-size:.9rem; line-height:1.55; }
+  .names li { padding:.45rem 0; border-top:1px solid #1c191722; } .names b { display:block; font-family:'Playfair Display',Georgia,serif; font-size:1.02rem; } .names span { color:#57534e; }
+  .career { list-style:none; margin:0; padding:0 0 0 1.1rem; border-left:2px solid #b45309; }
+  .career li { position:relative; padding:.5rem 0 .5rem .5rem; } .career li::before { content:""; position:absolute; left:-1.55rem; top:.95rem; width:.6rem; height:.6rem; border-radius:50%; background:#b45309; }
+  .career i { display:block; font-style:normal; font-weight:600; color:#b45309; font-size:.78rem; } .career span { display:block; }
+  .stats { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:#1c191733; border:1px solid #1c191733; margin:3rem 0; font-family:Inter,sans-serif; }
+  .stats div { background:#fdfbf7; padding:1.1rem .9rem; text-align:center; }
+  .stats b { display:block; font-family:'Playfair Display',Georgia,serif; font-size:clamp(1.3rem,3.6vw,1.9rem); color:#b45309; line-height:1.1; }
+  .stats span { display:block; margin-top:.5rem; font-size:.75rem; line-height:1.4; color:#57534e; }
+  @media (max-width:560px){ .stats{grid-template-columns:1fr} .fact dl > div{grid-template-columns:1fr;gap:.1rem} }
+  @keyframes shim { to { background-position:-200% 0 } }
+  @keyframes fadein { from { opacity:0 } to { opacity:1 } }
+  @keyframes spin { to { transform:rotate(360deg) } }
+  img.ld { background:linear-gradient(100deg,#e7e0d2 30%,#f3eee3 50%,#e7e0d2 70%); background-size:200% 100%; animation:shim 1.3s linear infinite; color:transparent; aspect-ratio:3/2; }
+  img.ok { animation:fadein .6s ease; }
+  img.bad { color:#78716c; font-family:Inter,sans-serif; font-size:.8rem; padding:1rem; border:1px dashed #78716c !important; aspect-ratio:3/2; }
+  .hero-img { opacity:.72; } .hero-img.ld { opacity:1; background:#1c1917; animation:none; }
+  .spinner { width:38px; height:38px; border:3px solid #f5efe355; border-top-color:#fcd34d; border-radius:50%; animation:spin .9s linear infinite; }
+  .gcap { font-family:Inter,sans-serif; font-size:.78rem; line-height:1.45; color:#57534e; margin-top:.5rem; }
+  .gal-btn img.ld { aspect-ratio:4/3; }
+
+  ::selection { background:#b4530933; }
+  .prose-col a:hover { color:#7c2d12; }
+  .prose-col figure { --w:min(56rem,calc(100vw - 2.5rem)); width:var(--w); margin-left:calc(50% - var(--w)/2); }
+  .prose-col figcaption { max-width:40rem; }
+  .rv { opacity:0; transform:translateY(16px); transition:opacity .8s ease, transform .8s ease; }
+  .rv.in { opacity:1; transform:none; }
+  @keyframes kb { from { transform:scale(1.09) } to { transform:scale(1) } }
+  .hero-img.ok { animation:fadein .8s ease, kb 30s ease-out forwards; }
+  @keyframes bob { 50% { transform:translateY(7px) } }
+  .cue { display:block; width:1px; height:46px; background:linear-gradient(#fcd34d,transparent); margin:2rem auto 0; animation:bob 2s ease-in-out infinite; }
+  #bar { background:linear-gradient(90deg,#b45309,#d97706); }
+  .ack li { counter-increment:ak; position:relative; padding:1rem 0 1rem 2.6rem; border-top:1px solid #1c191733; }
+  .ack { counter-reset:ak; }
+  .ack li::before { content:counter(ak, decimal-leading-zero); position:absolute; left:0; top:1.2rem; font-family:Inter,sans-serif; font-size:.7rem; font-weight:600; color:#b45309; letter-spacing:.08em; }
+  .ack .an { display:block; font-family:'Playfair Display',Georgia,serif; font-weight:700; font-size:1.2rem; line-height:1.25; }
+  .ack .ad { display:block; margin-top:.2rem; font-family:Inter,sans-serif; font-size:.82rem; line-height:1.45; color:#57534e; }
+  .gal-btn { overflow:hidden; display:block; } .gal-btn img { transition:transform .6s ease, filter .3s; } .gal-btn:hover img { transform:scale(1.04); }
+  #toTop { position:fixed; right:1rem; bottom:1rem; z-index:55; width:44px; height:44px; border:1px solid #1c1917; background:#fdfbf7; font-family:Inter,sans-serif; transition:opacity .3s; }
+  #toTop:hover { background:#b45309; color:#fff; border-color:#b45309; }
+  #jfill { transition:width .5s ease; }
+  @media print { #journey, #bar, #toTop, #lb, #tipModal, #tipOpen, .cue { display:none !important } .rv { opacity:1 !important; transform:none !important } }
+  @media (prefers-reduced-motion:reduce){ .rv{opacity:1;transform:none} .hero-img.ok{animation:none} .cue{animation:none} }
+</style>
+</head>
+<body>
+<div id="bar" class="fixed top-0 left-0 h-[3px] bg-amber z-[60]" style="width:0"></div>
+
+<!-- Journey tracker -->
+<nav aria-label="Journey of Shankaranatha Jyothsyer" id="journey" class="fixed top-[3px] inset-x-0 z-50 bg-parch/95 backdrop-blur border-b border-ink/20 -translate-y-full transition-transform duration-300">
+  <ol class="max-w-5xl mx-auto px-4 py-2 flex items-start justify-between font-meta text-[.68rem] relative">
+    <div class="absolute left-8 right-8 top-[17px] h-px bg-ink/25"></div>
+    <div id="jfill" class="absolute left-8 top-[17px] h-px bg-amber" style="width:0"></div>
+    <li class="stop relative flex flex-col items-center gap-0.5 z-10 bg-parch px-1" data-target="s-karivellur"><span class="dot"></span><span class="lbl">Karivellur</span><span class="yr">1789</span></li>
+    <li class="stop relative flex flex-col items-center gap-0.5 z-10 bg-parch px-1" data-target="s-kashi"><span class="dot"></span><span class="lbl">Kashi &amp; Gaya</span><span class="yr"></span></li>
+    <li class="stop relative flex flex-col items-center gap-0.5 z-10 bg-parch px-1" data-target="s-kangra"><span class="dot"></span><span class="lbl">Kangra</span><span class="yr">c. 1816</span></li>
+    <li class="stop relative flex flex-col items-center gap-0.5 z-10 bg-parch px-1" data-target="s-lahore"><span class="dot"></span><span class="lbl">Lahore Durbar</span><span class="yr">c. 1818</span></li>
+    <li class="stop relative flex flex-col items-center gap-0.5 z-10 bg-parch px-1" data-target="s-travancore"><span class="dot"></span><span class="lbl">Travancore Durbar</span><span class="yr">c. 1835</span></li>
+    <li class="stop relative flex flex-col items-center gap-0.5 z-10 bg-parch px-1" data-target="s-lahore2"><span class="dot"></span><span class="lbl">Back to Lahore</span><span class="yr">1838</span></li>
+    <li class="stop relative flex flex-col items-center gap-0.5 z-10 bg-parch px-1" data-target="s-return"><span class="dot"></span><span class="lbl">Travancore, again</span><span class="yr">c. 1844</span></li>
+    <li class="stop relative flex flex-col items-center gap-0.5 z-10 bg-parch px-1" data-target="s-end"><span class="dot"></span><span class="lbl">Sreekanteswaram</span><span class="yr">1858</span></li>
+  </ol>
+</nav>
+
+<!-- Hero -->
+<header class="relative min-h-[92vh] flex items-end text-[#f5efe3] overflow-hidden bg-ink">
+  <img id="heroImg" data-w="1800" data-sizes="100vw" data-file="vangat_madom_long_shot.jpg.JPG" data-alt-file="vangat_madom_entrance.jpg.JPG" alt="Vangat Madom, a two-century-old Naalukettu near Karivellur" class="hero-img absolute inset-0 w-full h-full object-cover">
+  <div id="heroLoad" class="absolute inset-0 flex items-center justify-center"><span class="spinner"></span></div>
+  <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/50 to-ink/10"></div>
+  <div class="relative max-w-4xl mx-auto px-5 pb-16 pt-40 w-full">
+    <p class="font-meta text-sm mb-5 text-amber-200">A slice of history spanning Karivellur, Lahore and Trivandrum</p>
+    <h1 class="font-display font-black text-5xl sm:text-7xl leading-[1.02]">The Malayali Polymath of Lahore</h1>
+    <p class="font-display italic text-xl sm:text-2xl mt-6 max-w-2xl text-stone-200">Astrologer, diplomat, judge and soldier: the forgotten Malabar scholar who advised Maharaja Ranjit Singh.</p>
+    <p class="font-meta text-xs mt-8 text-stone-300"><span id="rt">14</span> minute read</p>
+    <a href="#begin" class="inline-block mt-10 font-meta text-sm border border-amber-200 px-5 py-3 hover:bg-amber-200 hover:text-ink transition">Begin reading</a>
+    <span class="cue" aria-hidden="true"></span>
+  </div>
+</header>
+
+<main id="begin" class="px-5">
+<article class="prose-col max-w-[40rem] mx-auto pt-16 pb-10">
+
+<section id="s-karivellur">
+<p class="opener">Off National Highway 66, near Karivellur in Kannur district, Kerala, lies Vangatt Madom, a two-century-old <i>Naalukettu</i> (a traditional Kerala mansion), amidst towering coconut trees and thick foliage. As you enter the mansion’s courtyard, wind wafts through it, circulating the smell of decay worsened by the sight of cobwebs draping the wooden roof and the dust accumulated on the walls. Once bustling with life, this now-uninhabited <i>Naalukettu</i>, with its central courtyard, rooms, alleys, still cluttered with family heirlooms, <i>Theyyam</i> paraphernalia, and photographs of ancestors, stands as a silent witness to the glory brought to the family by a remarkable member in the 19th century. Among the photographs adorning the walls around the <i>nadumuttam</i> (central courtyard), there’s a framed portrait in black and white with “Sankaranatha Jyothsyer” written in Malayalam. Located beside the family-run Kamakshi Temple, and a <i>nāga kaavu</i> (serpent grove), this <i>Naalukettu</i> remains a testament to the family’s rich heritage, a slice in history almost forgotten by the world, except a few descendants and historians.</p>
+
+<figure>
+  <img data-lb data-w="1000" data-sizes="(min-width:700px) 640px, 100vw" data-file="vangat_madom_outside.jpg.JPG" alt="Vangat Madom seen from outside" loading="lazy">
+  <figcaption><b>Vangat Madom, Karivellur.</b> The two-century-old Naalukettu among coconut trees. <span class="credit">Photograph: the author</span></figcaption>
+</figure>
+
+<p>Behind the black and white framed portrait that we saw lies a story filled with erudition, diplomacy, scholarship and to top it, bloody battles. The latter part of the 18th Century, marked by Mysorean invasions, was a tumultuous period in the history of Malabar. This era ended with the British East India Company taking over Malabar in 1792. During Tipu Sultan’s invasion, many people migrated southward fearing persecution and death. Among them was Parvati Amma, a learned <i>Unithiri</i> (a Samanthan/Kshatriya caste) woman from Vangatt Madom, and her husband, Agni Sarman, an erudite Sanskrit scholar from Pattodath Illam in the nearby Perinchelloor (Taliparamba). Pregnant at that time, Parvati Amma gave birth to Shankaranathan in a temple outhouse in 1789. The family continued their journey with the child, returning home only after the situation back home improved.</p>
+
+<p>In <i>Kerala Sahitya Charitram</i> (1953)<sup><a href="http://ax.sayahna.org/ulloor/ulloor-4-43.html" target="_blank" rel="noopener">[1]</a></sup>, poet Ulloor S. Parameswara Iyer writes that while Shankaranathan learned Malayalam and Sanskrit as per tradition, he was more inclined towards <i>kayikabhyasa</i>, referring to the martial art of Kalaripayattu. This unconventional interest displeased his mother, who once exclaimed, “How could a donkey be born of a horse?” Vanidas Elayavoor in his <i>Vadakkan Aithihyamala</i> (1996) writes that after this incident Shankaranathan changed for good. Under Paliyeri Ezhuthachan’s tutelage, he learned <i>tarka</i>, <i>vyakarana</i>, <i>kavyalankara</i>, <i>vaidya</i> and <i>jyothisha</i>. Shankaranathan, who by now had turned into a stellar student, wished to go beyond and explore the country to gain real life experiences. Getting his mother’s permission wasn’t easy. It is said that Shankaranathan left for Kashi to perform sacred rituals in Varanasi and Gaya for the betterment of his family, with his mother’s blessings.</p>
+
+
+<p class="pull">“How could a donkey be born of a horse?”<span class="block font-meta not-italic text-sm mt-3 text-stone-600">His mother’s remark, after which, writes Vanidas Elayavoor, Shankaranathan changed for good.</span></p>
+<figure>
+  <img data-lb data-w="1000" data-sizes="(min-width:700px) 640px, 100vw" data-file="portrait_joshi_shankar_nath.jpg" alt="Portrait of Joshi Shankar Nath with a Devanagari inscription" loading="lazy">
+  <figcaption><b>Portrait of Joshi Shankar Nath,</b> with an inscription in Devanagari characters “Jotsi Kerali Shankar Das” (Astrologer from Kerala, Shankar Das; his name incorrectly mentioned).</figcaption>
+</figure>
+
+<p>Irrespective of the nuances, we know that he left home for Kashi, embracing the scholar-magnet that the city was. Leaving behind his home and family in the verdant, pristine Malabar, Shankaranathan was destined to continue his scholarly pursuits in Kashi.</p>
+
+<aside class="fact" aria-label="At a glance">
+  <h3>At a glance</h3>
+  <dl>
+    <div><dt>Born</dt><dd>1789, in a temple outhouse, as his parents fled the Mysorean invasion</dd></div>
+    <div><dt>Parents</dt><dd>Parvati Amma of Vangatt Madom; Agni Sarman of Pattodath Illam, Perinchelloor</dd></div>
+    <div><dt>Teachers</dt><dd>Paliyeri Ezhuthachan at home; Varahacharya in Kashi</dd></div>
+    <div><dt>Courts served</dt><dd>Kangra, Lahore, Travancore</dd></div>
+    <div><dt>Married</dt><dd>Lakshmi of Cherukara Valiya Veedu, Attukal</dd></div>
+    <div><dt>Died</dt><dd>November 1858, Sreekanteswaram, Thiruvananthapuram</dd></div>
+  </dl>
+</aside>
+</section>
+
+<section id="s-kashi">
+<h2 class="sec">Kashi and Gaya</h2>
+<p>Soon, he became the student of a learned man by name, Varahacharya. Under him, Shankaranathan learned astrology, <i>pakṣi-śāstra</i>, <i>advaita-vedanta</i>. In <i>Kerala Bhashasahitya Charitram</i> (Vol. V)<sup><a href="https://books.sayahna.org/html/rnp-hist-lit-5.html" target="_blank" rel="noopener">[2]</a></sup>, RN Panicker traces the route he took. The young man travelled through Kodagu and Mysore to reach Kanchipuram. While bathing in river Palaar there, he stumbled upon goddess Kamakshi’s idol to which he started praying daily; it was this idol that was later consecrated near his house back in Karivellur, the Kamakshi Temple as we know the place today. In Kashi, he performed <i>Ganga-snanam</i> (bathing in the river Ganga), and in Gaya, <i>Gaya-shradhdham</i> (a sacred Hindu ritual performed to pay homage to departed ancestors), two things that he had promised his mother to undertake.</p>
+
+<figure>
+  <img data-lb data-w="1000" data-sizes="(min-width:700px) 640px, 100vw" data-file="vangat_madom_kamakshi_temple.jpg.JPG" alt="The family-run Kamakshi Temple beside Vangat Madom" loading="lazy">
+  <figcaption><b>The Kamakshi Temple, Karivellur.</b> Built to house the idol he found in Kanchipuram. <span class="credit">Photograph: the author</span></figcaption>
+</figure>
+
+<p>During his stay in Kashi, he became the favourite of many rulers around. It is said that kings would consult him on astrology, remunerating him copiously for his work. The young man, now wealthier than he could even dream of when he left home, started giving back to the society: with this wealth, he built Joshi Ghat, an inn for pilgrims at Manikarnika Ghat in Kashi.</p>
+</section>
+
+<section id="s-kangra">
+<h2 class="sec">The Raja of Kangra</h2>
+<p>One of the kings who was impressed by his knowledge and ability to predict was Raja Sansar Chand (c. 1765–1824) of Kangra who took him to court. Shankaranathan wrote the <i>garbha-jatakam</i> for the childless Raja and spouse. The couple followed his religious and spiritual advice, and was soon bestowed with a son. Not surprisingly, the Raja made him his Spiritual Advisor circa 1816.</p>
+<p>Shankaranathan’s ability went beyond what he learned: astrology and advaita-vedanta; his soft skills and practical sense made him favourable to resolve conflicts.</p>
+<p>A couple of years prior to this period, the expansionist Maharaja of Punjab, Ranjit Singh had helped Sansar Chand fight the Gurkhas, events that culminated with the Treaty of Jwalamukhi signed between the former two in 1809, bringing Kangra Fort under Ranjit Singh and making Sansar Chand an “obsequious tributary of Lahore”, per the <i>Gazetteer of the Kangra District</i> Vol. 1 (Kangra Proper 1883-84)<sup><a href="https://archive.org/details/in.ernet.dli.2015.531233/page/n59/mode/2up?" target="_blank" rel="noopener">[3]</a></sup>.</p>
+<p>Panicker writes that Maharaja Ranjit Singh wanted to do everything to disallow the entry of the British into his country and William Moorcroft, an ‘explorer’ did not get permission to go from Kangra to Lahore. Moorcroft was a Veterinary Surgeon, in charge of the EIC’s Stud Farm in Calcutta, who later left the company and became an explorer, and by some accounts, a spy in the “Great Game”, the struggle between England and Russia for control in Central Asia.</p>
+
+<figure>
+  <img data-lb data-w="1000" data-sizes="(min-width:700px) 640px, 100vw" data-file="portrait_joshi_shankar_nath_colesworthey_grant.jpg" alt="Sketch of Joshi Shankar Nath from Colesworthey Grant's Oriental Heads" loading="lazy">
+  <figcaption><b>Sketch from <i>A series of miscellaneous rough sketches of Oriental heads</i>.</b> Colesworthey Grant, 19th century. <span class="credit">Source: Wikimedia Commons</span></figcaption>
+</figure>
+
+<p>Moorcroft was detained while trying to enter the country. Kangra ruler Raja Sansar Chand got information that the British planned to attack Punjab in retaliation. He dispatched the twenty nine year old Shankaranathan to Lahore to apprise the Maharaja of the imminent conquest.</p>
+
+<aside class="fact" aria-label="One man, many names">
+  <h3>One man, many names</h3>
+  <ul class="names">
+    <li><b>Shankaranatha Jyothsyer</b> <span>the Malayali name, as it is known today</span></li>
+    <li><b>Joshi Kalan Shankarnath</b> <span>in Shahmukhi script, on the Chester Beatty painting</span></li>
+    <li><b>Jotsi Kerali Shankar Das</b> <span>in Devanagari, on a portrait (the name is incorrect)</span></li>
+    <li><b>Shunkurnauth Joshee</b> <span>in the <i>Asiatic Journal</i>, 1838</span></li>
+    <li><b>Ootum Swuroop Nirmoulbodhee Shunkernauth Joshee</b> <span>the title conferred by the British</span></li>
+  </ul>
+</aside>
+</section>
+
+<section id="s-lahore">
+<h2 class="sec">The Lahore Durbar</h2>
+<p>Panicker goes on to write that Shankaranathan convinced the Maharaja to free Moorcroft, a claim that surprisingly does not find a mention in Moorcroft’s own account, <a href="https://archive.org/details/in.ernet.dli.2015.283935/page/n509/mode/2up" target="_blank" rel="noopener"><i>Travels In The Himalayan Provinces Of Hindustan And The Panjab</i></a>. Panicker then writes that impressed by his diplomatic and negotiation skills, the Maharaja appointed Shankaranathan to his court. Vanidas’s version about Shankaranathan’s appointment in Lahore is less hagiographical: it says that the Maharaja met Shankaranathan first at Kangra and that’s when he was invited to join his Lahore court. We can safely conclude that Ranjit Singh heard about Shankaranathan circa 1818; he was invited to Lahore and appointed “first as his Spiritual Advisor and later as a member of his council of ministers in Lahore”, writes Sreedhara Menon in <i>Kerala District Gazetteers: Cannanore</i> (1972)<sup><a href="https://archive.org/details/dli.ministry.08399/page/172/mode/2up?q=sankaranatha+astrologer" target="_blank" rel="noopener">[4]</a></sup>.</p>
+
+<aside class="fact" aria-label="Where the sources disagree">
+  <h3>Where the sources disagree</h3>
+  <p><b>Did he free Moorcroft?</b> Panicker says Shankaranathan persuaded Ranjit Singh to release him. Moorcroft’s own <i>Travels</i> never mentions it.</p>
+  <p><b>How did he reach Lahore?</b> Panicker has Sansar Chand sending him, and his diplomacy winning the Maharaja over. Vanidas says Ranjit Singh met him first at Kangra and then invited him.</p>
+</aside>
+
+
+<p>Though the finer details of Shankaranathan’s career in Lahore are sketchy, we know for sure that he had grown to be an influential statesman in the court of Ranjit Singh. In 1827, Ranjit Singh sent a delegation led by Sirdar Hari Singh to meet Governor General William Pitt Amherst. Sree Narayan Bysakh, Dewan of the Governor General’s household in an autobiographical manuscript<sup><a href="https://s3.ap-south-1.amazonaws.com/calcutta-university/the-calcutta-review/calcutta_review_v95.pdf" target="_blank" rel="noopener">[5]</a></sup> (page 166) writes that this delegation from Punjab was escorted by 500 infantry, 200 cavalry, two guns and accompanied by Ranjit Singh’s astrologer Shankaranathan. For his profound astrological ability and a personality that can impress, it’s not surprising that Shankaranathan received gifts not just from the durbars of many princely states, but even native elites like Sheth Jamsetjee Jeejeebhoy, writes P. Thankappan Nair in his <i>South Indians in Kolkata</i><sup><a href="https://www.google.co.in/books/edition/South_Indians_in_Kolkata/swNuAAAAMAAJ?hl=en&gbpv=1" target="_blank" rel="noopener">[6]</a></sup>. Jamsetjee Jeejeebhoy, as we know, was a Parsi businessman and philanthropist from Bombay, amongst the richest Indians of the 19th century.</p>
+
+<figure>
+  <img data-lb data-w="1000" data-sizes="(min-width:700px) 640px, 100vw" data-file="ranjit_singh_with_astrologer_and_pandits.jpg" alt="Ranjit Singh with astrologer and pandits" loading="lazy">
+  <figcaption><b>Ranjit Singh with Astrologer and Pandits.</b> Shankaranatha Jyothsyer is the fifth from the left. His name is written in Shahmukhi script as Joshi Kalan Shankarnath. <span class="credit">Credit: Chester Beatty, Dublin, CC BY 4.0</span></figcaption>
+</figure>
+
+<p>Maharaja Ranjit Singh granted Shankaranath Joshi or more honorifically, Joshi Kalan Shankarnath, now known by the Punjabi version of his Malayali name Shankaranatha Jyothsyer (Jyothsyer meaning astrologer), and his heirs two villages yielding Rs. 3600 annually, writes his grandson S. Pramesvaran Pillai, in <i>Kerala Studies</i> (1955). A snippet from the <i>Asiatic Journal</i> (1838)<sup><a href="https://www.google.co.in/books/edition/The_Asiatic_Journal/2Zs3AQAAMAAJ?hl=en&gbpv=1&dq=%22shunkernauth+joshee%22&pg=RA1-PA98" target="_blank" rel="noopener">[7]</a></sup> which quotes <i>Durpan</i> newspaper reveals Shankaranathan’s stature: “He has been honoured with an interview with the Governor, the members of Council” while highlighting his influence. Shankaranathan was a philanthropist too. Among other efforts, he used his wealth to build Joshi Ghat (an inn in Benares), a Kamakshi Temple and inn in Kizhakkanchery, Palakkad.</p>
+
+<div class="stats" role="group" aria-label="By the numbers">
+  <div><b>Rs 3,600</b><span>a year from two villages, granted to him and his heirs</span></div>
+  <div><b>500 · 200 · 2</b><span>infantry, cavalry and guns escorting the 1827 delegation he joined</span></div>
+  <div><b>1827</b><span>the year Lahore’s envoys met Governor General Amherst</span></div>
+</div>
+
+</section>
+
+<section id="s-travancore">
+<h2 class="sec">Travancore Durbar</h2>
+<p>Around 1835, the Maharaja of Travancore, Swati Tirunal Rama Varma heard about a Malayali gentleman of extraordinary calibre shining in the court of Ranjit Singh. By now, he had been awarded the title of “Ootum Swuroop Nirmoulbodhee Shunkernauth Joshee” by the British, in recognition of his intelligence and statesmanship. Swati Tirunal requested Shankaranathan to join Travancore and a reluctant Ranjit Singh agreed. Soon, Shankaranathan joined Travancore as a judge (later the chief judge) of the Sadr Court of Travancore. His journey from Lahore to Trivandrum had the ‘blessings’ of Lord W. Bentinck, no less, going by a later report in <i>Durpan</i> newspaper.</p>
+
+<p>Shankaranathan presented Swati Tirunal with many rare manuscripts like <i>Jnana Vasistham</i>, <i>Devi Bhashyam</i>, <i>Nama Bhashyam</i>, <i>Kashi Khandam</i>, <i>Devi Bhagavatam</i> and <i>Gauri Tantram</i>, sowing the seeds of what is now Oriental Research Institute and Manuscript Library.<sup><a href="https://www.swathithirunal.in/?p=5129" target="_blank" rel="noopener">[8]</a></sup> While in Trivandrum, at the insistence of Swati Tirunal, Shankaranathan undertook the translation of <i>Devi Bhagavatham</i> (originally Sanskrit). He could complete only eight cantos and the rest was completed by son Attukal Sankara Pillai after his father’s death, writes Prof. A. Sreedhara Menon in the <i>Survey of Kerala History</i>. Unfortunately, things did not work in Shankaranathan’s favour in Travancore due to his differences with a few in the Travancore Government.</p>
+
+<aside class="fact" aria-label="A career across courts">
+  <h3>A career across courts</h3>
+  <ol class="career">
+    <li><i>c. 1816</i><span><b>Kangra.</b> Spiritual Advisor to Raja Sansar Chand</span></li>
+    <li><i>c. 1818</i><span><b>Lahore.</b> Spiritual Advisor, later a member of Ranjit Singh’s council of ministers</span></li>
+    <li><i>c. 1835</i><span><b>Travancore.</b> Judge, later chief judge, of the Sadr Court</span></li>
+    <li><i>1838</i><span><b>Lahore, again.</b> Returns with a pass from Lord Bentinck</span></li>
+    <li><i>c. 1844 to 1858</i><span><b>Travancore, again.</b> Faujdari Commissioner until his death</span></li>
+  </ol>
+</aside>
+
+
+</section>
+
+<section id="s-lahore2">
+<h2 class="sec">Back to Lahore</h2>
+<p>The <i>Asiatic Journal</i> (Sep-Dec 1838) writes this about his return to Lahore: “About three years ago, he procured the permission of Runjeet Sing to visit his family, and, at the request of the Maharaja, obtained an audience of Lord W. Bentinck, who provided him with a pass, recommending him to the protection of all the British officers. Shunkurnauth Joshee now returns to Lahore”. Here was a man from Malabar rejoining his workplace, to work with a Maharaja respected and dreaded by many as powerful, creating news everywhere.</p>
+
+<figure>
+  <img data-lb data-w="1000" data-sizes="(min-width:700px) 640px, 100vw" data-file="astrologer_battle_sikh_army.jpg" alt="Woodcut of the court astrologer of Lahore predicting a fortunate day of battle" loading="lazy">
+  <figcaption><b>The Court Astrologer of Lahore Predicting a Fortunate Day of Battle for the Sikh Army.</b> Given the <i>uttareeyam</i> (upper body clothing), <i>kuduma</i> (tied hair) and the smeared sandal/ash on the forehead, this is most likely an astrologer from the southern part of India, and so Shankarnath Joshi. <span class="credit">Source: The Pictorial Times, 14 March 1846</span></figcaption>
+</figure>
+
+<p>Astrologer, and statesman, Shankaranathan was involved not just in civil affairs of the state, but also in military affairs. The <i>Encyclopedia of Sikhism</i> published by Punjabi University talks about Shankaranathan accompanying the Maharaja’s armies during an intrusion in the frontier area, led by Muhammed Akbar Khan. The profile also states that he was wounded in one of the battles.<sup><a href="https://archive.org/details/TheEncyclopediaOfSikhism-VolumeIvS-z/page/46/mode/2up?q=Sahkarnath" target="_blank" rel="noopener">[9]</a></sup> The wound scar on the left side of his face, that happened during a battle with the Afghans, is a testimony to the fact that he was not just a strategist who sat behind the curtains. His grandson S. Pramesvaran Pillai writes that when Shankaranathan was wounded during this battle, Maharaja Ranjit Singh snatched the sword from the enemy, killed him and later gifted it to Shankaranathan.</p>
+</section>
+</article>
+
+<!-- Lost sword -->
+<aside id="sword" class="sword max-w-3xl mx-auto my-14 p-8 sm:p-12 text-center" aria-labelledby="swordTitle">
+  <p class="font-meta text-xs text-amber-200 mb-3">An unfinished search</p>
+  <h3 id="swordTitle" class="font-display font-bold text-3xl sm:text-4xl mb-5">The Lost Sword of Lahore</h3>
+  <p class="text-lg leading-relaxed text-stone-200 max-w-xl mx-auto">Most dots of Shankaranathan’s life scattered across documents, memories, museums and places could be connected, but not one: the elusive sword he got from Lahore. It’s mentioned as a family heirloom in one of his grandson’s writings, but where is it now? The months I spent chasing this remnant of Shankaranathan’s life did not reach closure. Is it lost? Is it tucked away in a quiet living room, or is it forgotten in someone’s attic?</p>
+  <button id="tipOpen" class="mt-8 font-meta text-sm bg-amber text-white px-6 py-3 hover:bg-amber-700 transition">Share a tip about the sword</button>
+</aside>
+
+<article class="prose-col max-w-[40rem] mx-auto pb-10">
+<section id="s-return">
+<p>For Shankaranathan who left home years ago, it seems like there was hardly any personal life. It had to change. On the insistence of his mother, he married Lakshmi of Cherukara Valiya Veedu of Attukal, Trivandrum during his first stint in Trivandrum, going by an account published in 2006 and written by Late Smt. Ambika Nair, a great granddaughter of Shankaranathan.</p>
+
+<h2 class="sec">Return to Trivandrum</h2>
+<p>Ranjit Singh ruled Punjab for a year more after Shankaranathan’s return to Lahore. After the ruler’s death in 1839, political instability and moves by the British weakened Punjab. Shankaranathan sensed that things would go southward. It’s not surprising that Shankaranathan wrote a petition to Governor General Auckland circa 1840 requesting the government to restore him to the position he held earlier in Travancore (<a href="https://searcharchives.bl.uk/catalog/041-000752200" target="_blank" rel="noopener">British Library, IOR</a>). By 1844, it was already the fifth ruler on the throne after the death of Maharaja. This time, Shankaranathan requested the new Maharaja of Punjab to let him return to Travancore. In Trivandrum, Shankaranatha Jyothsyer was appointed as the Faujdari Commissioner, a post he served till his death in 1858. Though the young Maharaja Swati Tirunal died on December 25, 1846, at the age of 34, to be followed by his brother Uthram Thirunal Marthanda Varma, Shankaranathan continued to be in service. He was a favourite of the new king as well, going by some of the gifts bestowed upon by the king: a gold-clasped Rudraksha mala, a right-coiled conch shell, an ivory palanquin, and a <i>menavu</i> (covered palanquin).</p>
+
+</section>
+
+<section id="s-end">
+<p class="pull">He left behind a profound legacy as a Malayalee whose influence spanned from the Travancore royal court to the Sikh Empire of Maharaja Ranjit Singh.</p>
+
+<p>Shankaranatha Jyothsyer, the illustrious son of Malayala-naad, a polymath who attained name, fame and wealth around the country, passed away in November 1858 at his home in Sreekanteswaram in Thiruvananthapuram. He left behind a profound legacy as a Malayalee whose influence spanned from the Travancore royal court to the Sikh Empire of Maharaja Ranjit Singh.</p>
+
+<p>Unfortunately, there is nothing in Trivandrum’s or even Kerala’s public spheres that remind us that this genius lived there, except an unlikely reminder: Historian Dr. MG Sashibhooshan tells us that it was Shankaranathan who revived Attukal Temple in Trivandrum, the temple now known as the <i>Sabarimala of women</i>. The fact that even this piece of information is nothing but trivia hidden far away from public eyes is a reflection of the fact that he has faded into obscurity, unceremonious and unfortunate.</p>
+<p>The grainy portraits in Karivellur, obscured by the passage of time, remind us that illustrious sons fade away from public spheres and remain proud reminders of glory, maybe for a couple of generations more.</p>
+</section>
+</article>
+
+<!-- Gallery -->
+<section class="max-w-5xl mx-auto my-16" aria-labelledby="galTitle">
+  <h2 id="galTitle" class="font-display font-bold text-3xl text-center">Inside Vangat Madom</h2>
+  <p class="font-meta text-sm text-stone-600 text-center mt-2 mb-8">Select any photograph to enlarge it. Use the arrow keys to move between them.</p>
+  <div id="gallery" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+</section>
+
+<section class="max-w-4xl mx-auto my-20 border-t-[3px] border-double border-ink pt-10" aria-labelledby="ackTitle">
+  <h2 id="ackTitle" class="font-display font-bold text-3xl mb-2">Acknowledgements</h2>
+  <p class="font-meta text-sm text-stone-600 mb-8">With gratitude to the people and institutions who shared their time, records and photographs.</p>
+  <ul class="ack grid sm:grid-cols-2 gap-x-14 gap-y-1">
+<li><span class="an">Dr. Deepthi Murali</span><span class="ad">Assistant Professor, Department of History and Art History, George Mason University</span></li>
+<li><span class="an">Shri. Manmadhan Ullattil</span><span class="ad">Raleigh, North Carolina, United States</span></li>
+<li><span class="an">Shri. Balakrishnan Unithiri</span><span class="ad">Vangat Madom</span></li>
+<li><span class="an">Chester Beatty Museum</span><span class="ad">Dublin</span></li>
+<li><span class="an">Wikimedia Commons</span></li>
+<li><span class="an">Shri. Shiraz Hassan</span><span class="ad">Journalist, Lahore, Pakistan</span></li>
+<li><span class="an">Shri. Amjad Chudhary</span><span class="ad">Kasur, Pakistan</span></li>
+<li><span class="an">Shri. Sukumaran Chembollil</span><span class="ad">Pune</span></li>
+<li><span class="an">Smt. Sreevidya TP</span><span class="ad">Bengaluru</span></li>
+<li><span class="an">Harmilan Singh</span><span class="ad">@tawarikh_e_punjab</span></li>
+<li><span class="an">Prof. Indu Banga</span><span class="ad">Department of History, Panjab University, Chandigarh</span></li>
+<li><span class="an">Prof. Vikas Rathee</span><span class="ad">Central University of Punjab</span></li>
+<li><span class="an">Kaudiar Palace</span><span class="ad">Thiruvananthapuram</span></li>
+<li><span class="an">Dr. Jijo P Ulahannan</span><span class="ad">Govt College, Kasaragod</span></li>
+<li><span class="an">Calicut University Library</span></li>
+<li><span class="an">CUSAT Library</span></li>
+<li><span class="an">Dr. M. G. Sashibhooshan</span><span class="ad">Historian, Thiruvananthapuram</span></li>
+</ul>
+</section>
+</main>
+
+<footer class="bg-ink text-stone-300 font-meta text-sm py-10 px-5 text-center">
+  <p class="font-display text-lg mb-2">The Malayali Polymath of Lahore</p>
+  <p>Archival images are credited in their captions. <button id="copyLink" class="underline ml-2">Copy link to this page</button></p>
+</footer>
+
+<button id="toTop" aria-label="Back to top" style="opacity:0;pointer-events:none">&uarr;</button>
+
+<!-- Lightbox -->
+<div id="lb" role="dialog" aria-modal="true" aria-label="Image viewer" class="fixed inset-0 z-[80] flex flex-col" hidden>
+  <div class="flex items-center justify-end p-3 gap-2 font-meta text-sm text-white">
+    <span id="lbCount" class="mr-auto pl-2 text-stone-300"></span>
+    <button id="lbZoom" class="px-3 py-2 border border-white/40 hover:bg-white/10">Zoom</button>
+    <button id="lbClose" class="px-3 py-2 border border-white/40 hover:bg-white/10" aria-label="Close viewer">Close</button>
+  </div>
+  <div id="lbStage" class="flex-1 overflow-auto flex items-center justify-center px-4">
+    <span id="lbSpin" class="spinner absolute"></span>
+    <img id="lbImg" alt="" class="max-h-full max-w-full object-contain transition-all">
+  </div>
+  <div class="px-6 py-5 text-stone-200 font-meta text-sm max-w-3xl mx-auto w-full">
+    <p id="lbCap" class="leading-relaxed"></p>
+    <p id="lbCredit" class="mt-1 text-amber-200"></p>
+    <a id="lbOrig" target="_blank" rel="noopener" class="inline-block mt-2 underline text-stone-400">Open full-resolution original</a>
+  </div>
+  <button id="lbPrev" class="absolute left-2 top-1/2 text-white text-4xl px-3" aria-label="Previous image">&#8249;</button>
+  <button id="lbNext" class="absolute right-2 top-1/2 text-white text-4xl px-3" aria-label="Next image">&#8250;</button>
+</div>
+
+<!-- Tip modal -->
+<div id="tipModal" class="fixed inset-0 z-[90] bg-ink/70 flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="tipTitle" hidden>
+  <div class="bg-parch max-w-lg w-full p-8 border border-amber relative">
+    <button id="tipClose" class="absolute top-3 right-4 font-meta text-sm" aria-label="Close form">Close</button>
+    <h3 id="tipTitle" class="font-display font-bold text-2xl mb-2">Do you know where the sword is?</h3>
+    <p class="font-meta text-sm text-stone-600 mb-5">Describe what you know. Your message opens in your email app, addressed to the historian.</p>
+    <form id="tipForm" class="font-meta text-sm space-y-4">
+      <label class="block">Your name<input name="name" required class="mt-1 w-full border border-ink/40 bg-white px-3 py-2"></label>
+      <label class="block">Your email<input name="email" type="email" required class="mt-1 w-full border border-ink/40 bg-white px-3 py-2"></label>
+      <label class="block">What do you know?<textarea name="msg" rows="5" required class="mt-1 w-full border border-ink/40 bg-white px-3 py-2"></textarea></label>
+      <button class="bg-amber text-white px-6 py-3 hover:bg-amber-700">Send tip</button>
+      <p id="tipOk" class="text-amber font-semibold" hidden>Your email app should now be open with the tip ready to send.</p>
+    </form>
+  </div>
+</div>
+
+<script>
+/* ===== Edit these ===== */
+const CONTACT_EMAIL = "historian@example.com";   // where sword tips are sent
+const RAW = "https://raw.githubusercontent.com/codepuli/sj/main/";
+const USE_RESIZER = true;   // resizes photos on the fly through the free wsrv.nl image service; set false to load originals
+const GALLERY = [
+  "vangat_madom_inside_1.jpg.JPG","vangat_madom_inside2.jpg.JPG","vangat_madom_inside3.jpg.JPG",
+  "vangat_madom_inside4.jpg.JPG","vangat_madom_inside5.jpg.JPG","vangat_madom_inside6.jpg.JPG",
+  "vangat_madom_inside7.jpg.JPG","vangat_madom_inside8.JPG","vangat_madom_sarpa_kavu.jpg.JPG"
+];
+const GALLERY_CAPTIONS = [
+  "A wall of family photographs, including a framed portrait of Shankaranatha Jyothsyer.",
+  "A framed portrait on a whitewashed wall of the Naalukettu.",
+  "The framed Malayalam-captioned portrait of Shankaranatha Jyothsyer, with a newspaper clipping beneath it.",
+  "The nadumuttam, the open central courtyard, seen from the verandah.",
+  "A verandah with a wooden ceiling and stone steps along the courtyard.",
+  "A long pillared corridor around the courtyard.",
+  "Pillars and rafters of the inner verandah, with a doorway beyond.",
+  "Stone and wooden objects stacked in a side room.",
+  "The nāga kaavu (serpent grove) beside Vangat Madom."
+];
+/* ====================== */
+
+const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+
+// Gallery
+$("#gallery").innerHTML = GALLERY.map((src,i)=>`
+  <figure class="!m-0"><button class="gal-btn block w-full text-left" data-lb data-cap="${GALLERY_CAPTIONS[i]}" aria-label="Enlarge: ${GALLERY_CAPTIONS[i]}">
+  <img data-file="${src}" data-w="800" data-sizes="(min-width:1024px) 320px, (min-width:640px) 45vw, 100vw" alt="${GALLERY_CAPTIONS[i]}" loading="lazy"></button>
+  <figcaption class="gcap">${i+1}. ${GALLERY_CAPTIONS[i]}</figcaption></figure>`).join("");
+
+// Image loading: resized copy first, then originals; shimmer until the image arrives
+const rs = (path, w) => "https://wsrv.nl/?url=" + encodeURIComponent(RAW + path) + "&w=" + w + "&q=" + (w > 1500 ? 80 : 72) + "&output=webp&we";
+const DIRECT = f => ["images/" + f, f, RAW + "images/" + f, RAW + f];
+function candidates(f, w){ const c = []; if (USE_RESIZER) ["images/","" ].forEach(p => c.push(rs(p + f, w))); return c.concat(DIRECT(f)); }
+function load(img){
+  const f = img.dataset.file, w = +img.dataset.w || 1000, alt = img.dataset.altFile, c = candidates(f, w); let n = 0;
+  img.classList.add("ld");
+  img.onload = () => { img.classList.remove("ld"); img.classList.add("ok"); const hl = $("#heroLoad"); if (img.id === "heroImg" && hl) hl.remove(); };
+  img.onerror = () => {
+    img.removeAttribute("srcset"); img.removeAttribute("sizes");
+    if (++n < c.length) img.src = c[n];
+    else if (alt) { img.dataset.file = alt; img.dataset.altFile = ""; load(img); }
+    else { img.classList.remove("ld"); img.classList.add("bad"); const hl = $("#heroLoad"); if (img.id === "heroImg" && hl) hl.remove(); }
+  };
+  if (USE_RESIZER) {
+    img.sizes = img.dataset.sizes || "100vw";
+    img.srcset = [480,800,1200,1800].filter(x => x <= Math.max(w,800)).map(x => rs("images/" + f, x) + " " + x + "w").join(", ");
+  }
+  img.src = c[0];
+}
+$$("img[data-file]").forEach(load);
+$("#rt").textContent = Math.max(1, Math.round($$("article").map(a => a.innerText).join(" ").split(/\s+/).length / 230));
+
+// Reading progress + journey bar visibility
+const bar = $("#bar"), journey = $("#journey"), hero = $("header");
+addEventListener("scroll", () => {
+  const h = document.documentElement;
+  bar.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + "%";
+  journey.classList.toggle("-translate-y-full", h.scrollTop < hero.offsetHeight - 120);
+}, {passive:true});
+
+// Journey tracker
+const stops = $$(".stop"), ids = stops.map(s => s.dataset.target);
+stops.forEach(s => { s.tabIndex = 0; s.setAttribute("role","link");
+  const go = () => document.getElementById(s.dataset.target).scrollIntoView();
+  s.onclick = go; s.onkeydown = e => (e.key==="Enter"||e.key===" ") && (e.preventDefault(), go()); });
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return;
+  const idx = ids.indexOf(e.target.id);
+  stops.forEach((s,i) => { s.classList.toggle("on", i===idx); s.classList.toggle("past", i<idx); }); setJourney(idx);
+}), {rootMargin:"-30% 0px -60% 0px"});
+ids.forEach(id => io.observe(document.getElementById(id)));
+
+// Lightbox
+const lb = $("#lb"), lbImg = $("#lbImg"); let items = [], cur = 0, zoomed = false, lastFocus;
+function show(i){
+  cur = (i + items.length) % items.length; const el = items[cur];
+  const im = el.tagName === "IMG" ? el : el.querySelector("img"), f = im.dataset.file;
+  const fig = el.closest("figure"), fc = fig && fig.querySelector("figcaption");
+  const credit = fc && fc.querySelector(".credit");
+  lbImg.alt = im.alt || ""; setZoom(false); $("#lbCount").textContent = (cur+1) + " / " + items.length;
+  $("#lbCap").innerHTML = el.dataset.cap || (fc ? fc.innerHTML.replace(/<span class="credit">.*?<\/span>/,"") : "");
+  $("#lbCredit").textContent = credit ? credit.textContent : "";
+  $("#lbOrig").href = RAW + "images/" + f;
+  const c = candidates(f, 2200); let n = 0; const sp = $("#lbSpin");
+  sp.hidden = false; lbImg.style.opacity = 0;
+  lbImg.onload = () => { sp.hidden = true; lbImg.style.opacity = 1; };
+  lbImg.onerror = () => { if (++n < c.length) lbImg.src = c[n]; else sp.hidden = true; };
+  lbImg.src = c[0];
+}
+function setZoom(z){ zoomed = z; lbImg.style.maxWidth = z ? "none" : "100%"; lbImg.style.maxHeight = z ? "none" : "100%"; lbImg.style.cursor = z ? "zoom-out" : "zoom-in"; lbImg.style.width = z ? "200%" : ""; $("#lbZoom").textContent = z ? "Fit" : "Zoom"; }
+function openLb(el){ items = $$("[data-lb]"); lastFocus = document.activeElement; lb.hidden = false; document.body.style.overflow="hidden"; show(items.indexOf(el)); $("#lbClose").focus(); }
+function closeLb(){ lb.hidden = true; document.body.style.overflow=""; lbImg.removeAttribute("src"); lastFocus && lastFocus.focus(); }
+document.addEventListener("click", e => { const t = e.target.closest("[data-lb]"); if (t) openLb(t); });
+$$("figure img[data-lb]").forEach(i => { i.tabIndex = 0; i.onkeydown = e => e.key==="Enter" && openLb(i); });
+$("#lbClose").onclick = closeLb; $("#lbPrev").onclick = () => show(cur-1); $("#lbNext").onclick = () => show(cur+1);
+$("#lbZoom").onclick = lbImg.onclick = () => setZoom(!zoomed);
+lb.addEventListener("click", e => { if (e.target.id==="lbStage") closeLb(); });
+
+// Tip modal
+const tm = $("#tipModal");
+$("#tipOpen").onclick = () => { tm.hidden = false; tm.querySelector("input").focus(); };
+const closeTip = () => { tm.hidden = true; $("#tipOpen").focus(); };
+$("#tipClose").onclick = closeTip; tm.addEventListener("click", e => e.target===tm && closeTip());
+$("#tipForm").onsubmit = e => {
+  e.preventDefault(); const f = new FormData(e.target);
+  const body = `${f.get("msg")}\n\nFrom: ${f.get("name")} <${f.get("email")}>`;
+  location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("Tip: Shankaranatha Jyothsyer's sword")}&body=${encodeURIComponent(body)}`;
+  $("#tipOk").hidden = false;
+};
+
+
+// Scroll reveal
+const rvEls = $$(".prose-col p, .prose-col figure, .fact, .stats, .sword, h2.sec, #gallery figure, .ack li");
+if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  const ro = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); ro.unobserve(e.target); } }), {rootMargin:"0px 0px -8% 0px"});
+  rvEls.forEach(el => { el.classList.add("rv"); ro.observe(el); });
+}
+// Journey progress line
+const jf = $("#jfill");
+function setJourney(idx){ jf.style.width = "calc((100% - 4rem) * " + (idx/(stops.length-1)) + ")"; }
+// Back to top + copy link
+const tt = $("#toTop");
+addEventListener("scroll", () => { const on = scrollY > innerHeight*1.5; tt.style.opacity = on ? 1 : 0; tt.style.pointerEvents = on ? "auto" : "none"; }, {passive:true});
+tt.onclick = () => scrollTo({top:0});
+$("#copyLink").onclick = e => { navigator.clipboard && navigator.clipboard.writeText(location.href.split("#")[0]).then(() => e.target.textContent = "Link copied"); };
+// Lightbox swipe
+let tx = null;
+$("#lbStage").addEventListener("touchstart", e => { tx = e.touches[0].clientX; }, {passive:true});
+$("#lbStage").addEventListener("touchend", e => { if (tx === null || zoomed) return; const d = e.changedTouches[0].clientX - tx; if (Math.abs(d) > 50) show(cur + (d < 0 ? 1 : -1)); tx = null; });
+
+// Keyboard
+addEventListener("keydown", e => {
+  if (!lb.hidden) { if (e.key==="Escape") closeLb(); if (e.key==="ArrowLeft") show(cur-1); if (e.key==="ArrowRight") show(cur+1); }
+  else if (!tm.hidden && e.key==="Escape") closeTip();
+});
+
+// Missing-image fallback so layout never collapses
+
+</script>
+</body>
+</html>
