@@ -141,6 +141,14 @@ tailwind.config = { theme: { extend: {
   @media (prefers-reduced-motion:reduce){ .glow{animation:none} .route{stroke-dashoffset:0;stroke-dasharray:none} .mk.on .r{animation:none} }
   #top h1, #top p, #top .eyebrow { text-shadow:0 1px 3px rgb(0 0 0 / .7), 0 2px 18px rgb(0 0 0 / .65); }
   .eyebrow { display:inline-block; background:rgb(12 10 9 / .72); border-left:3px solid #f59e0b; padding:.55rem .9rem; border-radius:0 .4rem .4rem 0; font-weight:500; line-height:1.4; backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); }
+  .refs h3 { font-family:Inter,sans-serif; font-size:.75rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:#57534e; margin:2rem 0 .8rem; padding-bottom:.4rem; border-bottom:1px solid #1c191733; }
+  .refs ol, .refs ul { margin:0; padding:0; list-style:none; font-size:.98rem; line-height:1.55; }
+  .refs ol.notes { counter-reset:rn; } .refs ol.notes li { counter-increment:rn; position:relative; padding:.4rem 0 .4rem 2.4rem; }
+  .refs ol.notes li::before { content:"[" counter(rn) "]"; position:absolute; left:0; top:.45rem; font:600 .78rem Inter,sans-serif; color:#b45309; }
+  .refs ul li { position:relative; padding:.35rem 0 .35rem 1.3rem; } .refs ul li::before { content:""; position:absolute; left:.2rem; top:.95rem; width:.4rem; height:.4rem; border-radius:50%; background:#b4530988; }
+  .refs a { color:#b45309; text-decoration:underline; text-underline-offset:3px; } .refs .rl { font:500 .8rem Inter,sans-serif; white-space:nowrap; }
+  .thanks { max-width:40rem; margin:3rem auto 0; padding-left:1.2rem; border-left:3px solid #b45309; font-family:'Playfair Display',Georgia,serif; font-style:italic; font-size:1.2rem; line-height:1.6; color:#44403c; }
+  @media print { #tipModal { display:none !important } }
 </style>
 </head>
 <body class="bg-[#fcfaf7] text-stone-850">
@@ -154,6 +162,7 @@ tailwind.config = { theme: { extend: {
       <a class="navlink" href="#journey-map">Journey Map</a>
       <a class="navlink" href="#gallery-sec">Photo Gallery</a>
       <a class="navlink" href="#sword">The Lost Sword</a>
+      <a class="navlink hidden lg:inline" href="#references">References</a>
       <a class="navlink" href="#credits">Credits</a>
     </nav>
     <button id="shareBtn" aria-label="Copy link to share" class="ml-auto md:ml-2 inline-flex items-center gap-2 border border-amber-400/60 text-amber-200 px-2.5 sm:px-3 py-2 sm:py-1.5 rounded-full hover:bg-amber-400 hover:text-stone-900 transition">
@@ -162,7 +171,7 @@ tailwind.config = { theme: { extend: {
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
   <nav id="mobileMenu" hidden class="md:hidden border-t border-amber-500/20 px-4 py-4 grid gap-4 font-meta text-sm">
-    <a href="#begin">Story</a><a href="#journey-map">Journey Map</a><a href="#gallery-sec">Photo Gallery</a><a href="#sword">The Lost Sword</a><a href="#credits">Credits</a>
+    <a href="#begin">Story</a><a href="#journey-map">Journey Map</a><a href="#gallery-sec">Photo Gallery</a><a href="#sword">The Lost Sword</a><a href="#references">References</a><a href="#credits">Credits</a>
   </nav>
 </header>
 <div id="toast" role="status" aria-live="polite"></div>
@@ -328,6 +337,11 @@ tailwind.config = { theme: { extend: {
   <div><b>1827</b><span>the year Lahore’s envoys met Governor General Amherst</span></div>
 </div>
 
+<figure>
+  <img data-lb data-w="1000" data-sizes="(min-width:700px) 640px, 100vw" data-file="shankaranatha-jyothsyer-signature.jpg" alt="Signature of Shankaranatha Jyothsyer in Devanagari script" loading="lazy">
+  <figcaption><b>The signature of Shankaranatha Jyothsyer, in Devanagari script.</b> From a letter to “the Unkernath Joshers”, dated 1 March and received 9 March. <span class="credit">Source: National Archives of India, identifier NAIDLF01933532</span></figcaption>
+</figure>
+
 </section>
 
 <section id="s-travancore">
@@ -403,12 +417,48 @@ tailwind.config = { theme: { extend: {
   <div id="gallery" class="columns-1 sm:columns-2 lg:columns-3 gap-4"></div>
 </section>
 
+<section id="references" class="refs max-w-4xl mx-auto my-20 px-5" aria-labelledby="refTitle">
+  <p class="font-meta text-xs font-semibold tracking-[.14em] uppercase text-amber">Sources</p>
+  <h2 id="refTitle" class="font-serif font-bold text-3xl sm:text-4xl mt-2 mb-8">References &amp; Further Reading</h2>
+  <h3>Numbered notes, as cited in the essay</h3>
+  <ol class="notes">
+<li>Ulloor S. Parameswara Iyer, <i>Kerala Sahitya Charitram</i> (1953). <span class="rl"><a href="http://ax.sayahna.org/ulloor/ulloor-4-43.html" target="_blank" rel="noopener">Read online</a></span></li>
+<li>RN Panicker, <i>Kerala Bhashasahitya Charitram</i>, Vol. V. <span class="rl"><a href="https://books.sayahna.org/html/rnp-hist-lit-5.html" target="_blank" rel="noopener">Read online</a></span></li>
+<li><i>Gazetteer of the Kangra District</i>, Vol. 1: Kangra Proper (1883&ndash;84). <span class="rl"><a href="https://archive.org/details/in.ernet.dli.2015.531233/page/n59/mode/2up" target="_blank" rel="noopener">Internet Archive</a></span></li>
+<li>A. Sreedhara Menon, <i>Kerala District Gazetteers: Cannanore</i> (1972). <span class="rl"><a href="https://archive.org/details/dli.ministry.08399/page/172/mode/2up?q=sankaranatha+astrologer" target="_blank" rel="noopener">Internet Archive</a></span></li>
+<li>Sree Narayan Bysakh, autobiographical manuscript, p. 166; digitised in <i>The Calcutta Review</i>, vol. 95. <span class="rl"><a href="https://s3.ap-south-1.amazonaws.com/calcutta-university/the-calcutta-review/calcutta_review_v95.pdf" target="_blank" rel="noopener">PDF</a></span></li>
+<li>P. Thankappan Nair, <i>South Indians in Kolkata</i>. <span class="rl"><a href="https://www.google.co.in/books/edition/South_Indians_in_Kolkata/swNuAAAAMAAJ?hl=en&gbpv=1" target="_blank" rel="noopener">Google Books</a></span></li>
+<li><i>The Asiatic Journal</i> (1838), quoting the <i>Durpan</i> newspaper. <span class="rl"><a href="https://www.google.co.in/books/edition/The_Asiatic_Journal/2Zs3AQAAMAAJ?hl=en&gbpv=1&dq=%22shunkernauth+joshee%22&pg=RA1-PA98" target="_blank" rel="noopener">Google Books</a></span></li>
+<li>Swathi Thirunal website, on the manuscripts presented by Shankaranathan. <span class="rl"><a href="https://www.swathithirunal.in/?p=5129" target="_blank" rel="noopener">swathithirunal.in</a></span></li>
+<li><i>The Encyclopedia of Sikhism</i>, Vol. IV (S&ndash;Z), Punjabi University, Patiala. <span class="rl"><a href="https://archive.org/details/TheEncyclopediaOfSikhism-VolumeIvS-z/page/46/mode/2up?q=Sahkarnath" target="_blank" rel="noopener">Internet Archive</a></span></li>
+  </ol>
+  <h3>Other books, records and accounts cited</h3>
+  <ul>
+<li>Vanidas Elayavoor, <i>Vadakkan Aithihyamala</i> (1996).</li>
+<li>S. Pramesvaran Pillai, <i>Kerala Studies</i> (1955). The author was Shankaranathan&rsquo;s grandson.</li>
+<li>A. Sreedhara Menon, <i>Survey of Kerala History</i>.</li>
+<li>William Moorcroft, <a href="https://archive.org/details/in.ernet.dli.2015.283935/page/n509/mode/2up" target="_blank" rel="noopener"><i>Travels in the Himalayan Provinces of Hindustan and the Panjab</i></a>.</li>
+<li>Smt. Ambika Nair (great-granddaughter of Shankaranathan), account published in 2006.</li>
+<li>Petition to Governor General Auckland, c. 1840, India Office Records, <a href="https://searcharchives.bl.uk/catalog/041-000752200" target="_blank" rel="noopener">British Library</a>.</li>
+<li>Letter to &ldquo;the Unkernath Joshers&rdquo;, identifier NAIDLF01933532, National Archives of India.</li>
+<li>Dr. M. G. Sashibhooshan, historian, on the revival of the Attukal Temple.</li>
+  </ul>
+  <h3>Image credits</h3>
+  <ul>
+<li><i>Ranjit Singh with Astrologer and Pandits</i>. Chester Beatty, Dublin, CC BY 4.0.</li>
+<li>Colesworthey Grant, <i>A series of miscellaneous rough sketches of Oriental heads</i>, 19th century. Via Wikimedia Commons.</li>
+<li><i>The Court Astrologer of Lahore Predicting a Fortunate Day of Battle for the Sikh Army</i>, <i>The Pictorial Times</i>, 14 March 1846.</li>
+<li>Signature of Shankaranatha Jyothsyer. National Archives of India, identifier NAIDLF01933532.</li>
+<li>Portrait of Joshi Shankar Nath, with a Devanagari inscription. Photographs of Vangat Madom and Karivellur: the author.</li>
+  </ul>
+</section>
+
 <section id="credits" class="max-w-4xl mx-auto my-20 mx-5 px-5 border-t-[3px] border-double border-ink pt-10" aria-labelledby="ackTitle">
   <h2 id="ackTitle" class="font-serif font-bold text-3xl mb-2">Acknowledgements &amp; Research Credits</h2>
   <p class="font-meta text-sm text-stone-600 mb-8">With gratitude to the people and institutions who shared their time, records and photographs.</p>
   <ul class="ack grid sm:grid-cols-2 gap-x-14 gap-y-1">
 <li><span class="an">Dr. Deepthi Murali</span><span class="ad">Assistant Professor, Department of History and Art History, George Mason University</span></li>
-<li><span class="an">Shri. Manmadhan Ullattil</span><span class="ad">Raleigh, North Carolina, United States</span></li>
+<li><span class="an">Shri. Manmadhan Ullattil</span><span class="ad">History enthusiast, author and researcher, Raleigh, North Carolina, United States</span></li>
 <li><span class="an">Shri. Balakrishnan Unithiri</span><span class="ad">Vangat Madom</span></li>
 <li><span class="an">Chester Beatty Museum</span><span class="ad">Dublin</span></li>
 <li><span class="an">Wikimedia Commons</span></li>
@@ -425,7 +475,9 @@ tailwind.config = { theme: { extend: {
 <li><span class="an">CUSAT Library</span></li>
 <li><span class="an">Dr. M. G. Sashibhooshan</span><span class="ad">Historian, Thiruvananthapuram</span></li>
 <li><span class="an">S. Rajendu</span><span class="ad">Curator, Sevadhi Museum &amp; Indological Research Institute, Kottayam</span></li>
+<li><span class="an">Shri. Hari Sankar KL</span><span class="ad">Thiruvananthapuram</span></li>
 </ul>
+  <p class="thanks">Finally, my deepest thanks to my family, especially my father, Shri. V. P. Balagangadharan, and my uncle, Shri. V. P. Krishnakumar, who introduced me to this personality’s story many decades ago and showed me the way to dig further.</p>
 </section>
 </main>
 
@@ -458,32 +510,36 @@ tailwind.config = { theme: { extend: {
 </div>
 
 <!-- Tip modal -->
-<div id="tipModal" class="fixed inset-0 z-[90] bg-ink/70 flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="tipTitle" hidden>
-  <div class="bg-parch max-w-lg w-full p-8 border border-amber relative">
-    <button id="tipClose" class="absolute top-3 right-4 font-meta text-sm" aria-label="Close form">Close</button>
-    <h3 id="tipTitle" class="font-display font-bold text-2xl mb-2">Do you know where the sword is?</h3>
-    <p id="tipLead" class="font-meta text-sm text-stone-600 mb-5">Even a small clue helps: a family story, a name, a place, a photograph. I read every message.</p>
-    <form id="tipForm" class="font-meta text-sm space-y-4">
-      <label class="block">Your name<input name="name" required autocomplete="name" class="mt-1 w-full border border-ink/40 bg-white px-3 py-2"></label>
-      <label class="block">Your email, so I can reply<input name="email" type="email" required autocomplete="email" class="mt-1 w-full border border-ink/40 bg-white px-3 py-2"></label>
-      <label class="block">What is this about?
-        <select name="kind" class="mt-1 w-full border border-ink/40 bg-white px-3 py-2">
-          <option>I know where the sword is</option><option>I have family stories or records</option><option>I have photographs or documents</option><option>A correction or something else</option>
-        </select></label>
-      <label class="block">What do you know?<textarea name="msg" rows="5" required class="mt-1 w-full border border-ink/40 bg-white px-3 py-2"></textarea></label>
-      <input name="botcheck" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
-      <button id="tipSend" class="bg-amber text-white px-6 py-3 hover:bg-amber-700">Send tip</button>
-      <p id="tipErr" class="text-red-700" hidden></p>
-    </form>
-    <div id="tipDone" hidden class="font-meta text-sm">
-      <p id="tipDoneMsg" class="text-amber font-semibold mb-3"></p>
-      <textarea id="tipText" readonly rows="6" class="w-full border border-ink/30 bg-white px-3 py-2 text-xs"></textarea>
-      <div class="flex flex-wrap gap-2 mt-3">
-        <a id="tipGmail" target="_blank" rel="noopener" class="bg-amber text-white px-4 py-2 hover:bg-amber-700">Open in Gmail</a>
-        <a id="tipMail" class="border border-ink px-4 py-2 hover:bg-ink hover:text-parch">Open in email app</a>
-        <button id="tipCopy" class="border border-ink px-4 py-2 hover:bg-ink hover:text-parch">Copy message</button>
+<div id="tipModal" class="fixed inset-0 z-[90] bg-ink/70 overflow-y-auto" role="dialog" aria-modal="true" aria-labelledby="tipTitle" hidden>
+  <div class="min-h-full flex items-end sm:items-center justify-center sm:p-4">
+    <div class="bg-parch w-full max-w-lg p-6 sm:p-8 border-t-4 sm:border border-amber relative font-meta text-sm">
+      <button id="tipClose" class="absolute top-3 right-3 w-9 h-9 grid place-items-center text-lg hover:text-amber" aria-label="Close">&#10005;</button>
+      <h3 id="tipTitle" class="font-serif font-bold text-2xl mb-2 pr-8">Do you know where the sword is?</h3>
+      <div id="tipBody">
+        <p class="text-stone-600 mb-5">Any clue helps: a family story, a name, a place, a photograph. Write what you know, then choose how to send it.</p>
+        <label class="block mb-4">What do you know?
+          <textarea id="tipMsg" rows="5" class="mt-1 w-full border border-ink/40 bg-white px-3 py-2 text-base" placeholder="Where, who, when, and how you came to know it"></textarea></label>
+        <label class="block mb-4">Your name and email or phone <span class="text-stone-500">(optional, so I can reply)</span>
+          <input id="tipFrom" autocomplete="name" class="mt-1 w-full border border-ink/40 bg-white px-3 py-2 text-base"></label>
+        <input id="tipBot" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
+        <p id="tipErr" class="text-red-700 mb-3" hidden></p>
+        <div class="grid gap-2">
+          <button id="tipSend" class="bg-amber text-white px-5 py-3 hover:bg-amber-700">Send tip</button>
+          <button id="tipGmail" class="bg-amber text-white px-5 py-3 hover:bg-amber-700">Send with Gmail</button>
+          <div class="grid grid-cols-2 gap-2">
+            <button id="tipMail" class="border border-ink px-4 py-3 hover:bg-ink hover:text-parch">Open email app</button>
+            <button id="tipCopy" class="border border-ink px-4 py-3 hover:bg-ink hover:text-parch">Copy message</button>
+          </div>
+        </div>
+        <p class="text-xs text-stone-600 mt-4">Nothing is sent until you press send in your email. You can also write to <a id="tipAddr" class="underline"></a>.</p>
       </div>
-      <p class="text-xs text-stone-600 mt-3">Nothing is sent until you press send in your email. Or write directly to <span id="tipAddr"></span>.</p>
+      <div id="tipThanks" hidden>
+        <p id="tipThanksMsg" class="text-stone-700 mb-5"></p>
+        <div class="grid grid-cols-2 gap-2">
+          <button id="tipBack" class="border border-ink px-4 py-3 hover:bg-ink hover:text-parch">Edit message</button>
+          <button id="tipDoneBtn" class="bg-amber text-white px-4 py-3 hover:bg-amber-700">Close</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -491,7 +547,7 @@ tailwind.config = { theme: { extend: {
 <script>
 /* ===== Edit these ===== */
 const CONTACT_EMAIL = "nikhilnarayanan@gmail.com";   // where sword tips are sent
-const WEB3FORMS_KEY = "";   // optional: free access key from web3forms.com; when set, tips are sent straight to your inbox from the page
+const WEB3FORMS_KEY = "e79447db-b7bb-4733-8240-168d0e7c5ad9";   // optional: free access key from web3forms.com; when set, tips are sent straight to your inbox from the page
 const RAW = "https://raw.githubusercontent.com/codepuli/sj/main/";
 const USE_RESIZER = true;   // resizes photos on the fly through the free wsrv.nl image service; set false to load originals
 const GALLERY = [
@@ -507,7 +563,7 @@ const GALLERY_CAPTIONS = [
   "A verandah with a wooden ceiling and stone steps along the courtyard.",
   "A long pillared corridor around the courtyard.",
   "Pillars and rafters of the inner verandah, with a doorway beyond.",
-  "Stone and wooden objects stacked in a side room.",
+  "Wooden objects, an old radio, and a palm-leaf-umbrella stacked in a side room.",
   "The nāga kaavu (serpent grove) beside Vangat Madom."
 ];
 /* ====================== */
@@ -588,39 +644,45 @@ $("#lbZoom").onclick = lbImg.onclick = () => setZoom(!zoomed);
 lb.addEventListener("click", e => { if (e.target.id==="lbStage") closeLb(); });
 
 // Tip modal
-const tm = $("#tipModal");
-$("#tipOpen").onclick = () => { $("#tipForm").hidden = false; $("#tipDone").hidden = true; $("#tipLead").hidden = false; tm.hidden = false; tm.querySelector("input").focus(); };
-const closeTip = () => { tm.hidden = true; $("#tipOpen").focus(); };
-$("#tipClose").onclick = closeTip; tm.addEventListener("click", e => e.target===tm && closeTip());
-$("#tipAddr").textContent = CONTACT_EMAIL;
-$("#tipForm").onsubmit = async e => {
-  e.preventDefault(); const f = new FormData(e.target), err = $("#tipErr"); err.hidden = true;
-  if (f.get("botcheck")) return;
-  const subject = "Tip: Shankaranatha Jyothsyer's sword (" + f.get("kind") + ")";
-  const body = f.get("msg") + "\n\nFrom: " + f.get("name") + " <" + f.get("email") + ">\nTopic: " + f.get("kind");
-  const done = msg => { $("#tipForm").hidden = true; $("#tipDone").hidden = false; $("#tipDoneMsg").textContent = msg; };
-  if (WEB3FORMS_KEY) {
-    const btn = $("#tipSend"); btn.disabled = true; btn.textContent = "Sending…";
-    try {
-      const r = await fetch("https://api.web3forms.com/submit", {method:"POST", headers:{"Content-Type":"application/json", Accept:"application/json"},
-        body: JSON.stringify({access_key:WEB3FORMS_KEY, subject, name:f.get("name"), email:f.get("email"), message:body, botcheck:""})});
-      const j = await r.json();
-      if (j.success) { $("#tipForm").hidden = true; $("#tipLead").hidden = true; $("#tipDone").hidden = false; $("#tipDoneMsg").textContent = "Thank you. Your message has been sent."; $("#tipText").hidden = true; $$("#tipDone .flex, #tipDone .text-xs").forEach(x => x.hidden = true); return; }
-      throw new Error(j.message || "failed");
-    } catch (_) { btn.disabled = false; btn.textContent = "Send tip"; err.textContent = "That did not go through. Please try again, or write to " + CONTACT_EMAIL + "."; err.hidden = false; return; }
-  }
-  const q = "subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-  $("#tipText").value = "To: " + CONTACT_EMAIL + "\nSubject: " + subject + "\n\n" + body;
-  $("#tipMail").href = "mailto:" + CONTACT_EMAIL + "?" + q;
-  $("#tipGmail").href = "https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent(CONTACT_EMAIL) + "&" + q;
-  $("#tipLead").hidden = true; done("Your message is ready. Choose how to send it:");
-};
-$("#tipCopy").onclick = e => { $("#tipText").select(); (navigator.clipboard ? navigator.clipboard.writeText($("#tipText").value) : Promise.reject()).then(() => e.target.textContent = "Copied", () => document.execCommand("copy")); };
+const tm = $("#tipModal"), tMsg = $("#tipMsg"), tFrom = $("#tipFrom"), tErr = $("#tipErr");
+const SUBJECT = "Tip: Shankaranatha Jyothsyer's sword";
+$("#tipAddr").textContent = CONTACT_EMAIL; $("#tipAddr").href = "mailto:" + CONTACT_EMAIL;
+$("#tipSend").hidden = !WEB3FORMS_KEY; ["#tipGmail","#tipMail","#tipCopy"].forEach(q => { $(q).hidden = !!WEB3FORMS_KEY; });
+if (WEB3FORMS_KEY) $("#tipCopy").parentElement.hidden = true;
+function showTip(thanks){ $("#tipBody").hidden = !!thanks; $("#tipThanks").hidden = !thanks; }
+function openTip(){ showTip(false); tErr.hidden = true; tm.hidden = false; document.body.style.overflow = "hidden"; setTimeout(() => tMsg.focus(), 50); }
+function closeTip(){ tm.hidden = true; document.body.style.overflow = ""; $("#tipOpen").focus(); }
+$("#tipOpen").onclick = openTip; $("#tipClose").onclick = closeTip; $("#tipDoneBtn").onclick = closeTip; $("#tipBack").onclick = () => showTip(false);
+tm.addEventListener("click", e => e.target === tm || e.target.parentElement === tm ? closeTip() : 0);
+function compose(){
+  const m = tMsg.value.trim();
+  if (!m) { tErr.textContent = "Please write a few words first."; tErr.hidden = false; tMsg.focus(); return null; }
+  tErr.hidden = true; const f = tFrom.value.trim();
+  return {body: m + (f ? "\n\nFrom: " + f : ""), from: f};
+}
+$("#tipGmail").onclick = () => { const c = compose(); if (!c) return;
+  window.open("https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent(CONTACT_EMAIL) + "&su=" + encodeURIComponent(SUBJECT) + "&body=" + encodeURIComponent(c.body), "_blank", "noopener");
+  $("#tipThanksMsg").textContent = "Gmail should have opened in a new tab with your message ready. Press send there to finish."; showTip(true); };
+$("#tipMail").onclick = () => { const c = compose(); if (!c) return;
+  location.href = "mailto:" + CONTACT_EMAIL + "?subject=" + encodeURIComponent(SUBJECT) + "&body=" + encodeURIComponent(c.body);
+  $("#tipThanksMsg").textContent = "Your email app should have opened with the message ready. If nothing happened, go back and use Send with Gmail or Copy message, and email it to " + CONTACT_EMAIL + "."; showTip(true); };
+$("#tipCopy").onclick = async () => { const c = compose(); if (!c) return;
+  const text = "To: " + CONTACT_EMAIL + "\nSubject: " + SUBJECT + "\n\n" + c.body;
+  try { await navigator.clipboard.writeText(text); } catch (_) { const t = document.createElement("textarea"); t.value = text; document.body.appendChild(t); t.select(); document.execCommand("copy"); t.remove(); }
+  toast("Message copied. Paste it into an email to " + CONTACT_EMAIL); };
+$("#tipSend").onclick = async () => { const c = compose(); if (!c || $("#tipBot").value) return;
+  const b = $("#tipSend"); b.disabled = true; b.textContent = "Sending…";
+  try {
+    const r = await fetch("https://api.web3forms.com/submit", {method:"POST", headers:{"Content-Type":"application/json", Accept:"application/json"}, body: JSON.stringify({access_key:WEB3FORMS_KEY, subject:SUBJECT, name:c.from || "Anonymous", message:c.body, botcheck:""})});
+    const j = await r.json(); if (!j.success) throw 0;
+    tMsg.value = ""; $("#tipThanksMsg").textContent = "Thank you. Your message has been sent."; $("#tipBack").hidden = true; showTip(true);
+  } catch (_) { tErr.textContent = "That did not go through. Please try again, or write to " + CONTACT_EMAIL + "."; tErr.hidden = false; }
+  b.disabled = false; b.textContent = "Send tip"; };
 $("#yr").textContent = new Date().getFullYear();
 
 
 // Scroll reveal
-const rvEls = $$(".prose-col p, .prose-col figure, .prose-col blockquote, .fact, .stats, .sword, h2.sec, #gallery figure, .ack li, .step");
+const rvEls = $$(".prose-col p, .prose-col figure, .prose-col blockquote, .fact, .stats, .sword, h2.sec, #gallery figure, .ack li, .step, .refs li, .thanks");
 if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
   const ro = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); ro.unobserve(e.target); } }), {rootMargin:"0px 0px -8% 0px"});
   rvEls.forEach(el => { el.classList.add("rv"); ro.observe(el); });
